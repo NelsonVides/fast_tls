@@ -417,7 +417,6 @@ encode_alpn(ProtoList) ->
 
 load_nif() ->
     SOPath = p1_nif_utils:get_so_path(fast_tls, [fast_tls], "fast_tls"),
-    ok = p1_sha:load_nif(),
     load_nif(SOPath).
 
 load_nif(SOPath) ->
